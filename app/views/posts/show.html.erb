@@ -1,0 +1,11 @@
+<h2><%= @post.headline %></h2>
+<br>
+<h3><%= @post.title %></h3>
+<%= @post.content %>
+<br/><br/>
+<br/><br/>
+<%= link_to "Go back!" , posts_path %>
+<br/><br/>
+<%= link_to "delete" , @post, method: :delete %>
+<br/><br/>
+<%= link_to "edit" , edit_post_path(@post) %>

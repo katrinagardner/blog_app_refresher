@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to my blog!</h1>
+    <% @posts.each do |post| %>
+    <h2><%= link_to post.headline, post %></h2>
+    <h3><%= post.title %></h3>
+    <%= post.content %>
+    <% end %>
+
+    <br>
+    <br>
+    <%= link_to "Create a new thing", new_post_path %>
+
+  </body>
+</html>
